@@ -25,12 +25,12 @@ def seg():
         print("Voce não tem direito ao seguro desemprego.")
     else:
         media = ult + penul + ant / 3
-        if media > 1.687:
+        if media > 1.858:
             media * 0,80
-        elif media <= 1.687 >= 2.812:
+        elif media <= 1.859 >=  3.097:
             media * 0,5 +1.350
-        elif media < 2.812:
-            media = 1.912
+        elif media < 3.097:
+            media = 2.106
         print("O seu seguro é de: ", media)
      
 def main():
