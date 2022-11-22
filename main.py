@@ -4,13 +4,13 @@ def calcfe():
      while not (meses := input(f"Meses trabalhados:  ")).isdigit() or (meses := int(meses)) < 0 or meses > 1000000:
          print('Valor inválido, por favor digite apenas númseros')
      tot = (sal * meses/12) + sal /3
-     print("O valor da suas férias é: ",tot)
+     print("O valor da suas férias é: ","%.2f" % tot)
 
 def calcfg():
     while not (sala := input(f"Salário bruto: ")).isdigit() or (sala := int(sala)) < 0 or sala > 1000000:
         print('Valor inválido, por favor digite apenas números')
     tot_fgts = (8 / 100 ) * sala 
-    print("Seu depósito mensal é: ", tot_fgts)
+    print("Seu depósito mensal é: ","%.2f" % tot_fgts)
 
 def seg():
     while not (ult := input(f"Qual o valor do seu ultimo salario? ")).isdigit() or (ult := int(ult)) < 0 or ult > 1000000:
@@ -31,7 +31,7 @@ def seg():
             media * 0,5 +1.350
         elif media < 3.097:
             media = 2.106
-        print("O seu seguro é de: ", media)
+        print("O seu seguro é de: ","%.2f" % media)
      
 def main():
   while True:
