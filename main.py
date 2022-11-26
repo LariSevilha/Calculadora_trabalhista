@@ -1,10 +1,11 @@
+#funções para calcular
 def calcfe():
      while not (sal := input(f"Salário bruto: ")).isdigit() or (sal := int(sal)) < 0 or sal > 1000000:
           print('Valor inválido, por favor digite apenas números')
      while not (meses := input(f"Meses trabalhados:  ")).isdigit() or (meses := int(meses)) < 0 or meses > 1000000:
-         print('Valor inválido, por favor digite apenas númseros')
+         print('Valor inválido, por favor digite apenas números')
      tot = (sal * meses/12) + sal /3
-     print("O valor da suas férias é: ","%.2f" % tot)
+     print("O valor da suas férias é: ","%.2f" % tot) #esse operador matemático vai imprimir 2 números da casa decimais após a virgula.
 
 def calcfg():
     while not (sala := input(f"Salário bruto: ")).isdigit() or (sala := int(sala)) < 0 or sala > 1000000:
@@ -31,9 +32,10 @@ def seg():
             media * 0,5 +1.350
         elif media < 3.097:
             media = 2.106
-        print("O seu seguro é de: ","%.2f" % media)
-     
+        print("O seu seguro é de: ","%.2f" % media) 
+ #função principal
 def main():
+ #menu
   while True:
     print("\n\n ============= Calculadora trabalhista ============= \n\n 1- Calcular Férias \n\n 2- Calcular FGTS \n\n 3- Calcular seguro desemprego \n\n 4- Sair ")
     print("--------- Escolha uma opção: -------- \n\n")
